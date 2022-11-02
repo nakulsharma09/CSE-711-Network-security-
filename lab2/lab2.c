@@ -172,18 +172,22 @@ void encryptByPlayfairCipher(char str[], char key[])
     encrypt(str, keyT, ps);
 }
 
-// Driver codeS
+// Driver code
 int main()
 {
     char str[SIZE], key[SIZE];
 
     // Key to be encrypted
-    strcpy(key, "Monarchy");
+    printf("Enter the key, you want to use:\n");
+    gets(key);
+    // strcpy(key, "Nakul");
     printf("Key text: %s\n", key);
 
     // Plaintext to be encrypted
-    strcpy(str, "instruments");
-    printf("Plain text: %s\n", str);
+    printf("\nEnter the string, you want to encrypt:\n");
+    gets(str);
+    // strcpy(str, "instruments");
+    printf("\nPlain text: %s\n", str);
 
     // encrypt using Playfair Cipher
     encryptByPlayfairCipher(str, key);
@@ -192,5 +196,3 @@ int main()
 
     return 0;
 }
-
-// This code is contributed by AbhayBhat
